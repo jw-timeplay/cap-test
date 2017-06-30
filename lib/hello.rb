@@ -1,5 +1,5 @@
 class Hello
   def self.test_func
-    puts 'world'
+    puts 'hello world'
   end
 end
