@@ -46,4 +46,6 @@ end
 group :development, :production do
   gem "capistrano", "~> 3.8"
   gem "capistrano-rails", "~> 1.3"
+  gem "capistrano-rvm"
+  gem "capistrano-bundler", "~> 1.2"
 end
