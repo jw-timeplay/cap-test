@@ -10,8 +10,6 @@ set :repo_url, "git@github.com:jw-timeplay/cap-test.git"
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/var/www/engines"
 
-set :scm, :git
-
 #set :user, "ubuntu"
 
 set :deploy_via, :copy
