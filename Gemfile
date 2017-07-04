@@ -31,8 +31,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 
-gem 'unicorn'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -51,4 +52,5 @@ group :development, :production do
   gem "capistrano-rails", "~> 1.3"
   gem "capistrano-rvm"
   gem "capistrano-bundler", "~> 1.2"
+  gem "capistrano-passenger"
 end
