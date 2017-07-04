@@ -1,15 +1,22 @@
 # config valid only for current version of Capistrano
 lock "3.8.2"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, "rails-test"
+set :repo_url, "git@github.com:jw-timeplay/cap-test.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
+set :deploy_to, "/var/www/engines"
 
+set :scm, :git
+
+set :user, "ubuntu"
+
+set :deploy_cia, :copy
+
+server "13.58.156.220", :app, :web. :db, :primary => true
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
