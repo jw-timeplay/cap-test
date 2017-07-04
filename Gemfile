@@ -46,4 +46,5 @@ end
 
 group :development do
   gem "capistrano", "~> 3.8"
+  gem "capistrano/rails", "~>1.1"
 end
