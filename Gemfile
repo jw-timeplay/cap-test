@@ -44,7 +44,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-group :development do
+group :development, :production do
   gem "capistrano", "~> 3.8"
-  gem "capistrano/rails", "~>1.1"
+#  gem "capistrano/rails", "~>1.1"
 end

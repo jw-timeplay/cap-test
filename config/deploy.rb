@@ -12,11 +12,11 @@ set :deploy_to, "/var/www/engines"
 
 set :scm, :git
 
-set :user, "ubuntu"
+#set :user, "ubuntu"
 
-set :deploy_cia, :copy
+set :deploy_via, :copy
 
-server "13.58.156.220", :app, :web. :db, :primary => true
+#server "13.58.156.220", :app, :web, :db, :primary => true
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
